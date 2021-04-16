@@ -86,17 +86,22 @@ public class MathsTest {
 		}
 	
 	@Test
-	public void testMultiplicationCasGeneralNombreNegatifPositif(){
+	public void testMultiplicationCasValeuAbsoluNombreNegatifInferieurNombrePositif(){
 
 		Assert.assertEquals(maths.multiplication(-2, 3), -6);
 		}
 	
-	public void testMultiplicationCasGeneralNombrePositifNegatif(){
+	public void testMultiplicationCasValeurAbsoluNombreNegatifSupérieurNombrePositif(){
 
-			Assert.assertEquals(maths.multiplication(2, -3), -6);
-			}
+		Assert.assertEquals(maths.multiplication(-4, 3), -12);
+		}
 	
-	public void testMultiplicationCasGeneralNombrePosNeg(){
+	public void testMultiplicationCasNombrePositifInferieurValeurAbsoluNombreNegatif(){
+
+		Assert.assertEquals(maths.multiplication(2, -3), -6);
+		}
+	
+	public void testMultiplicationCasNombrePositifSuperieurValeurAbsoluNombreNegatif(){
 
 		Assert.assertEquals(maths.multiplication(4, -3), -12);
 		}

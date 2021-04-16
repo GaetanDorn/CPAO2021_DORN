@@ -91,6 +91,16 @@ public class MathsTest {
 		Assert.assertEquals(maths.multiplication(-2, 3), -6);
 		}
 	
+	public void testMultiplicationCasGeneralNombrePositifNegatif(){
+
+			Assert.assertEquals(maths.multiplication(2, -3), -6);
+			}
+	
+	public void testMultiplicationCasGeneralNombrePosNeg(){
+
+		Assert.assertEquals(maths.multiplication(4, -3), -12);
+		}
+	
 	@Test
 	public void testMultiplicationCasGeneralZero(){
 

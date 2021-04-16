@@ -32,9 +32,15 @@ public class MathsTest {
 	}
 	
 	@Test
-	public void testAdditionCasGeneralNégatifPositif() {
+	public void testAdditionCasNombreNégatifPositif() {
 
 		Assert.assertEquals(maths.addition(-2, 3), 1);
+		
+	}
+	
+	public void testAdditionCasNombrePositifNegatif() {
+
+		Assert.assertEquals(maths.addition(2, -3), -1);
 		
 	}
 	
@@ -66,6 +72,13 @@ public class MathsTest {
 	}
 	
 	@Test
+	public void testSoustractionCasGeneralPositifNegatif() {
+
+		Assert.assertEquals(maths.soustraction(2, -3), 5);
+		
+	}
+	
+	@Test
 	public void testSoustractionCasGeneralNombre0() {
 
 		Assert.assertEquals(maths.soustraction(0, 0), 0);
@@ -86,7 +99,7 @@ public class MathsTest {
 		}
 	
 	@Test
-	public void testMultiplicationCasValeuAbsoluNombreNegatifInferieurNombrePositif(){
+	public void testMultiplicationCasValeurAbsoluNombreNegatifInferieurNombrePositif(){
 
 		Assert.assertEquals(maths.multiplication(-2, 3), -6);
 		}
